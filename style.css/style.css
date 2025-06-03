@@ -278,8 +278,22 @@ a:hover {
   align-items: center;
   margin-bottom: 40px;
   overflow: hidden;
-  .img{}
-}
+  
+}.item img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-right: hidden;
+  }
+  .texto{ 
+    padding: 20px;
+    flex: 1;
+  }
+  .texto h2{
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
+  }
 
 /*contato*/
 main{
