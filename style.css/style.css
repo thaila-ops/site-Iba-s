@@ -295,7 +295,20 @@ a:hover {
     margin-bottom: 10px;
   }
   .texto p{
-    
+    font-size: 1.5em;
+    color:#515151 ;
+  }
+  .texto li{
+   align-items: center;
+    font-size: 1.6;
+
+  }
+  .img{
+     width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-right: hidden;
+    padding-left: 300px;
   }
 
 /*contato*/
@@ -395,5 +408,16 @@ main{
     grid-template-columns: 3fr;
 
 
+  }
+  .item{
+   
+  }
+  .item img{
+    width: 100%;
+    border-right: none ;
+    border-bottom: 1px solid #ccc;
+  }
+  .texto{
+    padding: 15;
   }
 }
