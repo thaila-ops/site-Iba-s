@@ -27,7 +27,7 @@
       <nav>
         <div class="nav-left">
           <a href="index.html">Home</a>
-          <a href="contato.html">Contato</a>
+          <a href="contato.php">Contato</a>
         </div>
 
         
@@ -35,8 +35,8 @@
         
 
         <div class="nav-right">
-          <a href="sobre.html">Sobre</a>
-          <a href="catalogo.html">Catálogo</a>
+          <a href="sobre.php">Sobre</a>
+          <a href="catalogo.php">Catálogo</a>
         </div>
       </nav>
     </div>
@@ -104,27 +104,28 @@
     </section>
   </main>
  
-  <section class="biografia">
-    <div class="bio-box">
-      <div class="bio-grid">
-        <div class="bio-img">
-        <img class= "img-perfil" src="imagens/Claudia .jpg" height="auto" alt="claudia viana iba">
-        </div>
-        <div class="bio-texto">
-          <h2>Claudia viana Iba</h2>
-          <p>
-            Fundadora do Iba’s Buffet, uma mulher guiada por Deus e movida pelo amor à família. Com
+   <div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Foto -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="imagens/Claudia .jpg" alt="Foto de Perfil" class="img-fluid shadow">
+      </div>
+
+      <!-- Texto -->
+      <div class="col-md-8">
+        <h2>Claudia Viana Iba</h2>
+        <p class="lead">
+           Fundadora do Iba’s Buffet, uma mulher guiada por Deus e movida pelo amor à família. Com
             carinho e dedicação, ela transforma cada evento em um momento de cuidado, sabor e acolhimento. Porque para
             ela, cozinhar é servir com o coração — e servir é um ato de fé e amor.
           </p>
-
-        </div>
       </div>
     </div>
-  </section>
+  </div>
   <footer class="footer">
     <div class="container">
   
+          </p>
       <p>
         "Realizando as promessas de Deus". <br>
         (Hebreus 10:36)
