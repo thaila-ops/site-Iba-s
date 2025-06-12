@@ -26,8 +26,8 @@
     <div class="container">
       <nav>
         <div class="nav-left">
-          <a href="index.html">Home</a>
-          <a href="contato.html">Contato</a>
+          <a href="index.php?pagina=home">Home</a>
+          <a href="paginas/contato.php?pagina=contato">Contato</a>
         </div>
 
         
@@ -35,12 +35,26 @@
         
 
         <div class="nav-right">
-          <a href="sobre.html">Sobre</a>
-          <a href="catalogo.html">Catálogo</a>
+          <a href="paginas/sobre.php?pagina=sobre">Sobre</a>
+          <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
       </nav>
     </div>
   </header>
+  <main>
+    <?php
+    //recuperar a variavel
+    $pagina = $_GET["pagina"] ?? "home";
+    $pagina = "pagina/{$pagina}.php";
+    //se a pagina existe
+    if (file_exists($pagina)){
+      include $pagina;
+    }
+    else {
+      include "paginas/404.php";
+    }
+    ?>
+  </main>
 
   <section class="banner">
     <div class="banner-content">
@@ -103,6 +117,7 @@
       </div>
     </section>
   </main>
+
  
   <section class="biografia">
     <div class="bio-box">

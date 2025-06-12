@@ -11,13 +11,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="stylesheet" href="style.css/style.css">
-    <link href="imagens/Logo.png.jpg" rel="shortcut icon">
+    <link rel="stylesheet" href="../style.css/style.css">
+    <link href="../imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
 
@@ -31,7 +30,7 @@
                 </div>
 
 
-                <img src="imagens/novo logo.jpg" width="160px" alt="ibas">
+                <img src="../imagens/novo logo.jpg" width="160px" alt="ibas">
 
 
                 <div class="nav-right">
@@ -45,7 +44,7 @@
         <section class="paragrafo">
             <h1>Iba´s Buffet</h1>
             <br>
-            <h2>Receba nosso carinho e cuidado desde o primeirop contato!</h2><br>
+            <h2>Receba nosso carinho e cuidado desde o primeiro contato!</h2><br>
             <blockquote>"Tudo que fizerem, faça de todo o coração, como para o senhor, e não para os homens."<br>
                 -Colossens 3:23</blockquote><br>
             <p>Acolher você é um presente. Estamos prontos para ouvir, sonhar e servir ao seu lado</p>
@@ -54,71 +53,90 @@
         <h3>Entre em contato conosco</h3><br>
 
         <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-                
-                <label for="Nome" class="form-label"> <Nome>Nome completo:</Nome></label>
-                <input type="text" class="form-control" id="nome" placeholder="Nome completo">
-                <div class="valid-feedback">
-                    Bem-vindo!
-                </div> 
-            </div>
-            <div class="col-md-4">
-                <label for="E-mail" class="form-label">E-mail:</label>
-                <input type="text" class="form-control" id="E-mail" placeholder="e-mail" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
-                <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                        Please choose a username.
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-        </form>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">Nome Completo</label>
+    <input type="text"name="nome" class="form-control" id="validationCustom01" placeholder="Nome Completo" required>
+    <div class="valid-feedback">
+      Bem-vindo(a)!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Número</label>
+    <input type="tel" name="telefone" class="form-control" id="validationCustom02" placeholder="(__)_____-____" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">E-mail</label>
+      <input type="email" name="email" inputmode="email" class="form-control" id="validationCustomUsername" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Número aproximado de convidados</label>
+    <select class="form-select" id="validationCustom04" name="faixa de pessoas" required>
+      <option selected disabled value="">selecione uma faixa</option>
+      <option value="20 à 50 pessoas">"20 à 50 pessoas"</option>
+      <option value="50 à 100 pessoas">"50 à 100 pessoas"</option>
+      <option value="100 à 200 pessoas">"100 à 200 pessoas"</option>
+      <option value="200 à 300 pessoas">"200 à 300 pessoas"</option>
+    </select>
+   
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Local do evento</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  
+ <div class="col-md-3">
+  <label class="form-label d-block mb-2">Tipo de evento</label>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="casamento" value="Casamento" required>
+    <label class="form-check-label" for="casamento">Casamento</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="aniversario" value="Aniversário" required>
+    <label class="form-check-label" for="aniversario">Aniversário</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="corporativo" value="Corporativo" required>
+    <label class="form-check-label" for="corporativo">Corporativo</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="cha" value="Chá de bebê" required>
+    <label class="form-check-label" for="cha">Chá de bebê</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="batizado" value="Batizado" required>
+    <label class="form-check-label" for="batizado">Batizado</label>
+  </div>
+</div>
+<div class="form-check">
+    <input type="radio" class="form-check-input" name="tipo_evento" id="outr" value="Batizado" required>
+    <label class="form-check-label" for="batizado">Batizado</label>
+  </div>
+</div>
+  <div class="col-12">
+    <div class="form-check">
+       <label for="validationCustom05" class="form-label">mensagem</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+      
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
         <div class="contato-extra">
             <h3>Outras formas de contato </h3>
 
