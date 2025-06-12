@@ -139,7 +139,7 @@
   </section>
   <footer class="footer">
     <div class="container">
-  
+     b
       <p>
         "Realizando as promessas de Deus". <br>
         (Hebreus 10:36)
