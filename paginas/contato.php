@@ -1,26 +1,26 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nome = $_POST['nome'] ?? '';
-    $telefone = $_POST['telefone'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $qtdpessoas = $_POST['qtdpessoas'] ?? '';
-    $local = $_POST['local'] ?? '';
-    $tipo_evento = $_POST['tipo_evento'] ?? '';
-    $mensagem = $_POST['mensagem'] ?? '';
+  $nome = $_POST['nome'] ?? '';
+  $telefone = $_POST['telefone'] ?? '';
+  $email = $_POST['email'] ?? '';
+  $qtdpessoas = $_POST['qtdpessoas'] ?? '';
+  $local = $_POST['local'] ?? '';
+  $tipo_evento = $_POST['tipo_evento'] ?? '';
+  $mensagem = $_POST['mensagem'] ?? '';
 
-    $conteudo = "==== NOVO ORÇAMENTO ====\n";
-    $conteudo .= "Nome: $nome\n";
-    $conteudo .= "Telefone: $telefone\n";
-    $conteudo .= "Email: $email\n";
-    $conteudo .= "Convidados: $qtdpessoas\n";
-    $conteudo .= "Local: $local\n";
-    $conteudo .= "Tipo de Evento: $tipo_evento\n";
-    $conteudo .= "Mensagem: $mensagem\n";
-    $conteudo .= "-------------------------\n";
+  $conteudo = "==== NOVO ORÇAMENTO ====\n";
+  $conteudo .= "Nome: $nome\n";
+  $conteudo .= "Telefone: $telefone\n";
+  $conteudo .= "Email: $email\n";
+  $conteudo .= "Convidados: $qtdpessoas\n";
+  $conteudo .= "Local: $local\n";
+  $conteudo .= "Tipo de Evento: $tipo_evento\n";
+  $conteudo .= "Mensagem: $mensagem\n";
+  $conteudo .= "-------------------------\n";
 
-    file_put_contents("orcamentos.txt", $conteudo, FILE_APPEND);
+  file_put_contents("orcamentos.txt", $conteudo, FILE_APPEND);
 
-    echo "<script>alert('Orçamento enviado com sucesso!');</script>";
+  echo "<script>alert('Orçamento enviado com sucesso!');</script>";
 }
 ?>
 
@@ -33,27 +33,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <title>Iba's Buffet</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css/style.css" />
+  <link rel="stylesheet" href="../style.css/style.css" />
   <link rel="shortcut icon" href="imagens/Logo.png.jpg" />
 </head>
-
+<base href="http://localhost/ibas_buffet/">
 <body>
+ <body>
   <header>
     <div class="container">
       <nav>
         <div class="nav-left">
-          <a href="#">Home</a>
-          <a href="#">Contato</a>
+          <a href="index.php?pagina=home">Home</a>
+          <a href="paginas/contato.php?pagina=contato">Contato</a>
         </div>
-        <img src="imagens/novo logo.jpg" width="160px" alt="ibas" />
+
+        
+        <img src="imagens/novo logo.jpg" width="160px" alt="ibas">
+        
+
         <div class="nav-right">
-          <a href="#">Sobre</a>
-          <a href="#">Catálogo</a>
+          <a href="paginas/sobre.php?pagina=sobre">Sobre</a>
+          <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
       </nav>
     </div>
   </header>
-
+  
+   
   <main class="container my-5">
     <section class="paragrafo">
       <h1>Iba´s Buffet</h1>
@@ -67,67 +73,87 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <h3 class="mt-5">Entre em contato conosco</h3>
 
-<form class="row g-3 needs-validation" method="POST" novalidate>
->
+   
+    <form class="row g-3" action="enviar.php" method="POST">
 
-
-    <form class="row g-3" method="POST" action="">
-      <div class="col-md-4">
-        <label for="nome" class="form-label">Nome Completo</label>
-        <input type="text" name="nome" class="form-control" id="nome" required />
-      </div>
-
-      <div class="col-md-4">
-        <label for="telefone" class="form-label">Telefone</label>
-        <input type="tel" name="telefone" class="form-control" id="telefone" required />
-      </div>
-
-      <div class="col-md-4">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" name="email" class="form-control" id="email" required />
-      </div>
-
-      <div class="col-md-3">
-        <label for="qtdpessoas" class="form-label">Convidados</label>
-        <select name="qtdpessoas" class="form-select" required>
-          <option value="">Selecione</option>
-          <option value="20 a 50 pessoas">20 a 50</option>
-          <option value="50 a 100 pessoas">50 a 100</option>
-          <option value="100 a 200 pessoas">100 a 200</option>
-          <option value="200 a 300 pessoas">200 a 300</option>
-        </select>
-      </div>
-
-      <div class="col-md-6">
-        <label for="local" class="form-label">Local do Evento</label>
-        <input type="text" name="local" class="form-control" id="local" required />
-      </div>
-
-      <div class="col-md-3">
-        <label class="form-label">Tipo de Evento</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Casamento" id="casamento" required />
-          <label class="form-check-label" for="casamento">Casamento</label>
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome Completo</label>
+          <input type="text" name="nome" class="form-control" id="nome" required />
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Aniversário" id="aniversario" />
-          <label class="form-check-label" for="aniversario">Aniversário</label>
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" name="email" class="form-control" id="email" required />
+          <div class="text-danger small" id="emailError"></div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="tipo_evento" value="Corporativo" id="corporativo" />
-          <label class="form-check-label" for="corporativo">Corporativo</label>
+
+        <div class="col-md-6">
+          <label for="telefone" class="form-label">Telefone/Whatsapp</label>
+          <input type="tel" name="telefone" class="form-control" id="telefone" required />
+          <div class="text-danger small" id="telefoneError"></div>
         </div>
-      </div>
 
-      <div class="col-12">
-        <label for="mensagem" class="form-label">Mensagem</label>
-        <textarea name="mensagem" class="form-control" id="mensagem" rows="3" required></textarea>
-      </div>
+        <div class="col-md-6">
+          <label class="form-label">Tipo de Evento</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_evento" value="Casamento" id="casamento" />
+            <label class="form-check-label" for="casamento">Casamento</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_evento" value="Aniversário" id="aniversario" />
+            <label class="form-check-label" for="aniversario">Aniversário</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_evento" value="Corporativo" id="corporativo" />
+            <label class="form-check-label" for="corporativo">Corporativo</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tipo_evento" value="cha" id="cha" />
+            <label class="form-check-label" for="cha">Chá de bebê</label>
+          </div>
 
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar Orçamento</button>
-      </div>
-    </form>
+          <div class="form-check d-flex alien-items-center">
+            <input class="form-check-input me-2" type="checkbox" name="tipo_evento" value="outro" id="outro" />
+            <label class="form-check-label me-2" for="outro">Outro:</label>
+            <input type="text" class="form-control form-control-sm" placeholder="Descreva">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Data do Evento</label>
+          <input type="date" name="date" class="form-control" id="data" required />
+        </div>
+
+        <div class="col-md-6">
+          <label for="qtdpessoas" class="form-label">Convidados</label>
+          <select name="qtdpessoas" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="20 a 50 pessoas">20 a 50</option>
+            <option value="50 a 100 pessoas">50 a 100</option>
+            <option value="100 a 200 pessoas">100 a 200</option>
+            <option value="200 a 300 pessoas">200 a 300</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="local" class="form-label">Local do Evento (Bairro ou Cidade)</label>
+          <input type="text" name="local" class="form-control" id="local" required />
+        </div>
+
+
+        <div class="col-12">
+          <label for="mensagem" class="form-label">Mensagem / Detalhes do evento </label>
+          <textarea name="mensagem" class="form-control" id="mensagem" rows="4"></textarea>
+        </div>
+
+        <div class="col-12">
+
+          <div id="successMessage" class="alert alert-success d-none text-center" role="alert">
+            Formulário enviado com sucesso! Entraremos em contato em breve.
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Orçamento</button>
+        </div>
+      </form>
   </main>
 
   <footer class="footer text-center py-4">
@@ -137,6 +163,114 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      // Oculta mensagem de sucesso
+      const successMessage = document.getElementById("successMessage");
+      successMessage.classList.add("d-none");
+
+      // Limpa mensagens de erro anteriores
+      document.querySelectorAll(".text-danger").forEach(el => el.textContent = "");
+
+      // Regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const telefoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+
+      // Campos
+      const nome = document.getElementById("nome");
+      const email = document.getElementById("email");
+      const telefone = document.getElementById("telefone");
+      const data = document.getElementById("data");
+      const local = document.getElementById("local");
+      const qtd = document.querySelector("select[name='qtdpessoas']");
+
+      // Validação de campos obrigatórios
+      if (nome.value.trim() === "") {
+        nome.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        nome.classList.remove("is-invalid");
+      }
+
+      if (!emailRegex.test(email.value.trim())) {
+        document.getElementById("emailError").textContent = "E-mail inválido. Ex: exemplo@email.com";
+        email.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        email.classList.remove("is-invalid");
+      }
+
+      if (!telefoneRegex.test(telefone.value.trim())) {
+        document.getElementById("telefoneError").textContent = "Telefone inválido. Ex: (11) 91234-5678";
+        telefone.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        telefone.classList.remove("is-invalid");
+      }
+
+      if (data.value.trim() === "") {
+        data.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        data.classList.remove("is-invalid");
+      }
+
+      if (local.value.trim() === "") {
+        local.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        local.classList.remove("is-invalid");
+      }
+
+      if (qtd.value === "") {
+        qtd.classList.add("is-invalid");
+        isValid = false;
+      } else {
+        qtd.classList.remove("is-invalid");
+      }
+
+      // Verifica se algum tipo de evento foi selecionado
+      const eventosSelecionados = document.querySelectorAll("input[name='tipo_evento']:checked");
+      if (eventosSelecionados.length === 0) {
+        alert("Por favor, selecione ao menos um tipo de evento.");
+        isValid = false;
+      }
+
+      // Se tudo estiver válido
+      if (isValid) {
+        successMessage.classList.remove("d-none");
+        form.reset();
+        document.querySelectorAll(".is-invalid").forEach(el => el.classList.remove("is-invalid"));
+      }
+    });
+
+    // Máscara para telefone
+    const telefoneInput = document.getElementById("telefone");
+    telefoneInput.addEventListener("input", function () {
+      let valor = telefoneInput.value.replace(/\D/g, "");
+      if (valor.length > 11) valor = valor.slice(0, 11);
+
+      if (valor.length >= 2 && valor.length <= 6) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+      } else if (valor.length > 6 && valor.length <= 10) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 6)}-${valor.slice(6)}`;
+      } else if (valor.length > 10) {
+        valor = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+      }
+
+      telefoneInput.value = valor;
+    });
+  });
+</script>
+
+
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iba's Buffet</title>
-
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
@@ -16,80 +16,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="stylesheet" href="../style.css/style.css" />
     <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
+  <base href="http://localhost/ibas_buffet/">
 
 <body>
-    <body>
-  <div class="menu">
-    <div class="dish">
-      <img src="imagens/Tábua de frios .jpg" alt="tabua de frios">
-      <div class="descricao">
-        <h2>Mesa de Frios</h2>
-        <p>Queijos</p>
-       <ol>
-          <li>Parmesão</li>
-             <li>Provolone</li>
-                    <li>Gouda </li>
-                    <li>Nozinho</li>
-                    <li>Gorgonzola</li>       
-        </ol>
-      </div>
-    </div>
-
-    <div class="dish">
-      <div class="descricao">
-        
-        <p>Embutidos.</p>
-        <ol>
-          <li>Salame Italiano</li>
-          <li>Lombinho Defumado</li>
-          <li>Copa</li>
-          <li>Peito de Peru Defumado</li>
-        </ol>
-      </div>
-      <img src="imagens/Queijo Brie .jpg" alt="Brie">
-    </div>
-
-     <div class="dish">
-      <div class="descricao"> 
-        <p>Complemento.</p>
-        <ol>
-          <li>Azeitona Verde e Preta</li>
-          <li>Ovo de Codorna</li>
-          <li>Palmito</li>
-          <li>torradas</li>
-          <li>frutas</li>
-        </ol>
-      </div>
-    </div>
-
-    <div class="dish">
-      <img src="imagens/Coquetel .jpg" alt="Coquetel">
-      <div class="descricao">
-        <h2>Finger Foods</h2>
-        <p>Ramequuins (Assados)</p>
-        <ol>
-          <li>Risoto</li>
-             <li>Batata Recheada</li>
-                    <li>Escondidinho de Carne Seca</li>
-                    <li>Penne</li>
-                        
-        </ol>
-      </div>
-    </div>
-    
-  </div>
-</body>
-</html>
     <header>
         <div class="container">
             <nav>
                 <div class="nav-left">
-                    <a href="index.html">Home</a>
-                    <a href="contato.html">Contato</a>
+                    <a href="index.php?pagina=home">Home</a>
+                    <a href="paginas/contato.php?pagina=contato">Contato</a>
                 </div>
 
 
@@ -97,79 +36,136 @@
 
 
                 <div class="nav-right">
-                    <a href="sobre.html">Sobre</a>
-                    <a href="catalogo.html">Catálogo</a>
+                    <a href="paginas/sobre.php?pagina=sobre">Sobre</a>
+                    <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
                 </div>
             </nav>
         </div>
     </header>
-
-    <div class="catalogo">
-        <h1>Catálogo do Buffet</h1>
-        <div class="item">
-            <img src="imagens/Tábua de frios .jpg" alt="tabua de frios">
-            <div class="texto">
-                <h2>mesa de frios</h2>
-                <p>
-
-                    <strong>
-                        Queijos
-                    </strong>
+    <div class="menu">
+        <div class="dish">
+            <img src="../imagens/Tábua de frios .jpg" alt="tabua de frios">
+            <div class="descricao">
+                <h2>Mesa de Frios</h2>
+                <p>Queijos</p>
+                <ol>
                     <li>Parmesão</li>
                     <li>Provolone</li>
                     <li>Gouda </li>
                     <li>Nozinho</li>
                     <li>Gorgonzola</li>
-
-                </p>
+                </ol>
             </div>
         </div>
-        <div class="item-2">
-<div class="imagem">
-            <img src="imagens/Coquetel .jpg" alt="mesa de frios">
+
+        <div class="dish">
+            <div class="descricao">
+
+                <p>Embutidos.</p>
+                <ol>
+                    <li>Salame Italiano</li>
+                    <li>Lombinho Defumado</li>
+                    <li>Copa</li>
+                    <li>Peito de Peru Defumado</li>
+                </ol>
+            </div>
+            <img src="imagens/Queijo Brie .jpg" alt="Brie">
         </div>
-            <h2>Embutidos</h2>
-            <P>
-                <li>Salame Italiano</li>
-                <li>Lombinho Defumado</li>
-                <li>Copa</li>
-                <li>Peito de Peru Defumado</li>
-            </P>
+
+        <div class="dish">
+            <div class="descricao">
+                <p>Complemento.</p>
+                <ol>
+                    <li>Azeitona Verde e Preta</li>
+                    <li>Ovo de Codorna</li>
+                    <li>Palmito</li>
+                    <li>torradas</li>
+                    <li>frutas</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="dish">
+            <img src="imagens/Coquetel .jpg" alt="Coquetel">
+            <div class="descricao">
+                <h2>Finger Foods</h2>
+                <p>Ramequuins (Assados)</p>
+                <ol>
+                    <li>Risoto</li>
+                    <li>Batata Recheada</li>
+                    <li>Escondidinho de Carne Seca</li>
+                    <li>Penne</li>
+
+                </ol>
+            </div>
         </div>
 
     </div>
+</body>
+
+</html>
 
 
-
-
-
-
-
-
-
-
-    <footer class="footer">
-        <div class="container">
-
+<div class="catalogo">
+    <h1>Catálogo do Buffet</h1>
+    <div class="item">
+        <img src="imagens/Tábua de frios .jpg" alt="tabua de frios">
+        <div class="texto">
+            <h2>mesa de frios</h2>
             <p>
-                "Realizando as promessas de Deus". <br>
-                (Hebreus 10:36)
-            </p>
-            <hr>
-            <p>
-                <a href="https://www.facebook.com/share/1AePV4BFf4/?mibextid=wwXIfr" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/ibasbuffet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                    title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="http://youtube.com" title="Youtube">
-                    <i class="fab fa-youtube"></i>
-                </a>
+
+                <strong>
+                    Queijos
+                </strong>
+                <li>Parmesão</li>
+                <li>Provolone</li>
+                <li>Gouda </li>
+                <li>Nozinho</li>
+                <li>Gorgonzola</li>
+
             </p>
         </div>
-    </footer>
+    </div>
+    <div class="item-2">
+        <div class="imagem">
+            <img src="imagens/Coquetel .jpg" alt="mesa de frios">
+        </div>
+        <h2>Embutidos</h2>
+        <P>
+            <li>Salame Italiano</li>
+            <li>Lombinho Defumado</li>
+            <li>Copa</li>
+            <li>Peito de Peru Defumado</li>
+        </P>
+    </div>
+
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+
+        <p>
+            "Realizando as promessas de Deus". <br>
+            (Hebreus 10:36)
+        </p>
+        <hr>
+        <p>
+            <a href="https://www.facebook.com/share/1AePV4BFf4/?mibextid=wwXIfr" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ibasbuffet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://youtube.com" title="Youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </p>
+    </div>
+</footer>
 
 
 </body>
