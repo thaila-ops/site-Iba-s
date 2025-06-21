@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="style2.css/style.css">
+  <link rel="stylesheet" href="style2.css/style2.css">
   <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -154,8 +154,8 @@
           title="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="http://youtube.com" title="Youtube">
-          <i class="fab fa-youtube"></i>
+         <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações." target="_blank" >
+          <i class="fas fa-envelope me-1"></i> 
         </a>
       </p>
     </div>

@@ -151,7 +151,7 @@ p {
   text-align: center;
   font-size: large;
   color: #2f2f2f;
-  margin: 30px 100px 30px 100px;
+ 
 }
 
 .produto {
@@ -200,9 +200,9 @@ hr {
 .bio-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 30px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -344,7 +344,7 @@ main{
   width: 100%;
   margin-bottom: 10px;
   text-align: left;
-  font-weight: 500;
+  
 }
 .btn-contato i {
   margin-right: 8px;
@@ -361,6 +361,27 @@ main{
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.redes a {
+   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 4px 0;
+  color: #444;
+  text-decoration: none;
+  font-size: 25px !important;
+  transition: color 0.2s ease;
+
+}
+
+.redes a:hover {
+  color: #a87c5f; 
+}
+
+.redes i {
+  margin-right: 6px;
+  color: #a87c5f;
+}
+
 
 
 /* Responsivo */

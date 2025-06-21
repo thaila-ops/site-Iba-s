@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="../style2.css/style.css" />
+  <link rel="stylesheet" href="../style2.css/style2.css" />
   <link rel="shortcut icon" href="imagens/Logo.png.jpg" />
 </head>
 <base href="http:/ibas_buffet/">
@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="container my-5">
   <div class="row align-items-start">
     
-    <!-- Coluna da esquerda: Endereço + Redes -->
+   
     <div class="col-md-6 mb-4">
       <h5 class="fw-semibold mb-3">Endereço</h5>
      <p class="d-flex align-items-center text-muted fs-6">
@@ -175,24 +175,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   Rua Santa Cruz, 508 – Jd Florida, Campo Mourão – PR
 </p>
 
-      <h5 class="fw-semibold mt-12 mb-3">Redes Sociais</h5>
-      <div class="d-flex flex-wrap gap-2">
-        <a href="https://wa.me/5544999212043" target="_blank" class="btn ">
-          <i class="fab fa-whatsapp me-1"></i> Whatsapp
+      <h5 class="fw-semibold ">Redes Sociais</h5>
+     
+
+      <div class="redes">
+        <ol>
+      <a href="https://wa.me/5544999212043" target="_blank" >
+         <ul> <i class="fab fa-whatsapp me-1"></i>Whatsapp</ul>
         </a>
-        <a href="https://www.instagram.com/ibasbuffet" target="_blank" class="btn">
-          <i class="fab fa-instagram me-1"></i> Instagram
+        <a href="https://www.instagram.com/ibasbuffet" target="_blank" >
+         <ul> <i class="fab fa-instagram me-1"></i> Instagram</ul> 
         </a>
-        <a href="https://www.facebook.com/ibasbuffet" target="_blank" class="btn">
-          <i class="fab fa-facebook-f me-1"></i> Facebook
+        <a href="https://www.facebook.com/ibasbuffet" target="_blank" >
+         <ul> <i class="fab fa-facebook-f me-1"></i> Facebook</ul>
         </a>
-        <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações." target="_blank" class="btn ">
-          <i class="fas fa-envelope me-1"></i> E-mail
+        <a href="mailto:ibasbuffet@outlook.com?subject=contato pelo site&Olá, gostaria de mais informações." target="_blank" >
+         <ul> <i class="fas fa-envelope me-1"></i> E-mail</ul>
         </a>
+      
       </div>
     </div>
+  </ol>
 
-    <!-- Coluna da direita: Mapa -->
+   
     <div class="col-md-6">
       <div class="rounded-3 shadow-sm overflow-hidden" style="height: 320px;">
         <iframe
