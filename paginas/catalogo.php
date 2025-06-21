@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="stylesheet" href="../style.css/style.css" />
+    <link rel="stylesheet" href="../style2.css/style.css" />
     <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
-  <base href="http://localhost/ibas_buffet/">
+  <base href="http:/ibas_buffet/">
 
 <body>
     <header>
@@ -36,7 +36,7 @@
 
 
                 <div class="nav-right">
-                    <a href="paginas/sobre.php?pagina=sobre">Sobre</a>
+                    <a href="index.php#sobre">Sobre</a>
                     <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
                 </div>
             </nav>

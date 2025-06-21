@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iba's Buffet</title>
-<base href="http://localhost/ibas_buffet/">
+<base href="http:/ibas_buffet/">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-  <link rel="stylesheet" href="style.css/style.css">
+  <link rel="stylesheet" href="style2.css/style.css">
   <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -36,7 +36,7 @@
         
 
         <div class="nav-right">
-          <a href="paginas/sobre.php?pagina=sobre">Sobre</a>
+          <a href="#sobre">Sobre</a>
           <a href="paginas/catalogo.php?pagina=catalogo">Catálogo</a>
         </div>
       </nav>
@@ -69,7 +69,7 @@
       </p>
 
       <div class="btn">
-        <a href="catalogo.html" class="test">Ver Catálogo</a>
+        <a href="paginas/catalogo.php?pagina=catalogo" class="test">Ver Catálogo</a>
       </div>
 
     </div>
@@ -120,7 +120,7 @@
   </main>
 
  
-  <section class="biografia">
+  <section id="sobre" class="biografia">
     <div class="bio-box">
       <div class="bio-grid">
         <div class="bio-img">
