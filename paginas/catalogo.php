@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="stylesheet" href="../style2.css/style2.css" />
+    <link rel="stylesheet" href="../style2.css/style3.css" />
     <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
   <base href="http:/ibas_buffet/">
-
+<a href="https://wa.me/5544999212043" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+  <i class="fab fa-whatsapp me-1"></i>
+</a>
 <body>
     <header>
         <div class="container">
