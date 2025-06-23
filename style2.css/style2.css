@@ -49,7 +49,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  flex-wrap: wrap;
+  
   z-index: 1000;
   background-color: white;
   display: flex;
@@ -86,6 +86,7 @@ nav a:hover {
 main img {
   width: 100%;
   height: auto;
+  padding: 20px;
 }
 
 .banner {
@@ -285,57 +286,7 @@ a:hover {
   color: #a68a64;
   text-decoration: none;
 }
-/*catalogo*/
-.catalogo{
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 20px;
 
-}
-.catalogo h1{
-  margin-bottom: 300px;
-  text-align: center;
-  font-size: 2.5em;
-  color: #2c2c2c;
-
-}
-.item{
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  overflow: hidden;
-  
-}.item img{
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-right: hidden;
-  }
-  .texto{ 
-    padding: 20px;
-    flex: 1;
-  }
-  .texto h2{
-    font-size: 1.5em;
-    color: #444;
-    margin-bottom: 10px;
-  }
-  .texto p{
-    font-size: 1.5em;
-    color:#515151 ;
-  }
-  .texto li{
-   align-items: center;
-    font-size: 1.6;
-
-  }
-  .img{
-     width: 100px;
-    height: auto;
-    object-fit: cover;
-    border-right: hidden;
-    padding-left: 300px;
-  }
 
 /*contato*/
 main{
@@ -475,9 +426,7 @@ main{
 
 
   }
-  .item{
-   
-  }
+
   .item img{
     width: 100%;
     border-right: none ;
