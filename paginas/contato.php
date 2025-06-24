@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <link rel="stylesheet" href="../style2.css/style3.css" />
   <link rel="shortcut icon" href="imagens/Logo.png.jpg" />
 </head>
-<base href="http:/ibas_buffet/">
+<base href="<? $_base?>">
 
 <body>
   <header>

@@ -20,7 +20,7 @@
     <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
-<base href="http:/ibas_buffet/">
+<base href="<? $_base?>">
 <a href="https://wa.me/5544999212043" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp me-1"></i>
 </a>
