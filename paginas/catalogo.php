@@ -141,7 +141,7 @@
                     <li>Croquete de Bacalhau</li>
                     <li>Empadão: Alho Poró, Frango, Palmito e Aspargos</li>
                 </ol>
-                <img src="imagens/Lanche natural .jpg" alt="Coquetel">
+                <img src="imagens/Lanche natural .jpg" style="float: right; margin-left: 1rem;"  alt="Coquetel">
             </div>
         </div>
         <div class="dish">
