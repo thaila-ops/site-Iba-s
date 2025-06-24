@@ -20,7 +20,7 @@
         integrity="sha512-yHfM4D5xYcHc8MIhBhHtL9BRDOoN0uRM3kskmvwlLoAhDQ/IuCB6v0IZI1iUvXkYOiMd9Rvi9BkD+fS2gk0PRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="style2.css/style2.css">
+  <link rel="stylesheet" href="style2.css/style3.css">
   <link href="imagens/Logo.png.jpg" rel="shortcut icon">
  
 </head>
@@ -50,7 +50,7 @@
     </div>
   </header>
   <main>
-    <?php
+   <?php
     //recuperar a variavel
     $pagina = $_GET["pagina"] ?? "home";
     $pagina = "paginas/{$pagina}.php";
@@ -62,6 +62,7 @@
       include "paginas/404.php";
     }
     ?>
+
   </main>
 
 
@@ -132,7 +133,7 @@
           <img src="imagens/taboa de frios.jpeg" width="140px" alt="coquetel">
           <h3>Coquetel</h3>
         </a>
-        <a href="#sobremesas" class="produto">
+        <a href="#doce" class="produto">
           <img src="imagens/prato sobremesa.jpeg" width="140px" alt="sobremesas">
           <h3>Doces e sobremesas</h3>
         </a>

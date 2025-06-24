@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .whatsapp-float:hover {
@@ -34,8 +35,10 @@
 body {
   background-color: #fdf6ec;
   font-family: "Playfair Display", serif;
+  padding-top: 180px;
 
 }
+
 
 
 .margin {
@@ -146,7 +149,6 @@ nav a:hover {
   flex-direction: row-reverse;
 }
 
-/* Imagens */
 .dish img {
   width: 300px;
   max-width: 100%;
@@ -154,8 +156,8 @@ nav a:hover {
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+ 
 
-/* Texto das descrições */
 .descricao {
   flex: 1;
 }
@@ -171,6 +173,7 @@ nav a:hover {
   font-size: 1.1em;
   color: #5c5c5c;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .descricao ol {

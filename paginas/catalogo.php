@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-    <link rel="stylesheet" href="../style.css/style.css" />
+    <link rel="stylesheet" href="../style.css/style1.css" />
     <link href="imagens/Logo.png.jpg" rel="shortcut icon">
 
 </head>
@@ -26,27 +26,6 @@
 </a>
 
 <body>
-
-<?php
-$page = $_GET['page'] ?? 1;
-
-switch ($page) {
-  case 1:
-    include 'paginas/catalogo/page1.php';
-    break;
-  case 2:
-    include 'paginas/catalogo/page2.php';
-    break;
-  case 3:
-    include 'paginas/catalogo/page3.php';
-    break;
-  case 4:
-    include 'paginas/catalogo/page4.php';
-    break;
-  default:
-    include 'paginas/404.php';
-}
-?>
 
     <header>
         <div class="container">
@@ -67,12 +46,27 @@ switch ($page) {
             </nav>
         </div>
     </header>
-    <div class="menu">
-        <div class="dish">
+
+<div class="text-center my-5" style="margin-top: 5rem !important;">
+  <h1 class="display-4 fw-bold" style="font-family: 'Playfair Display', serif;">
+    Sabores Abençoados para Momentos de Gratidão
+  </h1>
+  <p class="lead fst-italic mt-3" style="font-family: 'Playfair Display', serif; font-size: 1.25rem;">
+    “Porque tudo o que Deus criou é bom, e nada deve ser rejeitado, desde que recebido com ação de graças.”
+  </p>
+  <p class="text-muted" style="font-family: 'Playfair Display', serif;">
+    — 1 Timóteo 4:4
+  </p>
+</div>
+
+
+<section id="coquetel">
+    <div  class="menu">
+        <div  class="dish">
             <img src="imagens/Tábua de frios .jpg" alt="tabua de frios">
             <div class="descricao">
                 <h2>Mesa de Frios</h2>
-                <p>Queijos</p>
+                <h2>Queijos</h2>
                 <ol>
                     <li>Parmesão</li>
                     <li>Provolone</li>
@@ -82,11 +76,12 @@ switch ($page) {
                 </ol>
             </div>
         </div>
+        
 
         <div class="dish">
             <div class="descricao">
 
-                <p>Embutidos.</p>
+                <h2>Embutidos</h2>
                 <ol>
                     <li>Salame Italiano</li>
                     <li>Lombinho Defumado</li>
@@ -99,7 +94,7 @@ switch ($page) {
 
         <div class="dish">
             <div class="descricao">
-                <p>Complemento.</p>
+                <h2>Complemento</h2>
                 <ol>
                     <li>Azeitona Verde e Preta</li>
                     <li>Ovo de Codorna</li>
@@ -126,7 +121,7 @@ switch ($page) {
         </div>
         <div class="dish">
             <div class="descricao">
-                <p>Finger Foods</p>
+                <h2>Finger Foods</h2>
                 <ol>
                     <li>Mini Quiche</li>
                     <li>Canapés de Pepino Quente</li>
@@ -146,12 +141,13 @@ switch ($page) {
                     <li>Croquete de Bacalhau</li>
                     <li>Empadão: Alho Poró, Frango, Palmito e Aspargos</li>
                 </ol>
-                <img src="imagens/ .jpg" alt="Coquetel">
+                <img src="imagens/Lanche natural .jpg" alt="Coquetel">
             </div>
         </div>
         <div class="dish">
             <div class="descricao">
-                <p>Salgados Fritos e Assados </p>
+                <h2>Salgados Fritos e Assados </h2>
+                <img src="imagens/Quiche.jpg" alt="Coquetel">
                 <ol>
                     <li>Pastel de Vento</li>
                     <li>Coxinhas</li>
@@ -162,29 +158,211 @@ switch ($page) {
                  </ol>
             </div>
         </div>
+</section>
 
-   <nav aria-label="Page navigation example">
-  <ul class="pagination">
+<section id="doce">
+        <div class="menu">
+  <div class="dish">
+    <img src="imagens/Sobremesa de morango .jpg" alt="Doce 1">
+    <div class="descricao">
+      <h2>Tortas Doce</h2>
+      <p>De Acordo com a sugestão da cliente</p>
+      <ol>
+        <li>Torta de Morango</li>
+        <li>Torta de Damasco</li>
+        <li>Torta Dois Amores</li>
+        <li>Marta Rocha</li>
+        <li>Torta de Abacaxi</li>
+        <li>Strogonoff de Nozes</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/IMG_0108.jpg" alt="Doce 2">
+    <div class="descricao">
+      <h2>Doces Finos</h2>
+      <p>De acordo com a sugestão do cliente</p>
+      <ol>
+        <li>Mini Banoffe</li>
+        <li>brigadeiro</li>
+        <li>Beijinho</li>
+        <li>Dois Amores</li>
+        <li>Bolo de Pote</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/Bolo caseiro.jpg" alt="Doce 3">
+    <div class="descricao">
+      <h2>Bolos Caseiros</h2>
+      <p>Para chás e coffe</p>
+      <ol>
+        <li>Bolo mesclados</li>
+        <li>Bolo de Limão</li>
+        <li>Bolo de Laranja</li>
+        <li>Bolo de Coco</li>
+        <li>Bolo de Chocolate</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/Pão de mel .jpg" alt="Doce 4">
+    <div class="descricao">
+      <h2>presente</h2>
+      <p>De acordo com a necessidade do cliente</p>
+      <ol>
+        <li>Pão de Mel</li>
+        <li>Bolos de pote</li>
+        <li>CupCake</li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+<section id="jantar">
+<div class="menu">
+    <div class="dish">
+        <img src="imagens/jantar.jpeg" alt="Doce 1">
+        <div class="descricao">
+            <h2>Jantar Tradicional</h2>
+            <p>De acordo com a necessidade do cliente, estamos sujeitas a mudanças no cardápio</p>
+            <ol>
+                <li>3 Tipos de Salada</li>
+                <li>Arroz Branco </li>
+                <li>Arroz Temperado</li>
+                <li>1 Massa</li>
+                <li>2 Carnes</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="dish">
+        <img src="imagens/Paleta suína.jpg" alt="Doce 2">
+        <div class="descricao">
+            <h2>Carnes</h2>
+            <p>Assadas e grelhadas</p>
+            <li>Posta ao MOlho Madeira</li>
+            <li>Paleta Súina Recheada</li>
+            <li>Medalhão de frango</li>
+            <li>Filé Mignon</li>
+            <li>Cordeiro ao vinho</li>
+            <li>Chester a Califórnia</li>
+            <li>Camarão na Moranga</li>
+            <li>Frango grelhado</li>
+            <li>File de Salmão</li>
+            <li>Frango Assado Desossado e Recheado</li>
+        </div>
+    </div>
+
+    <div class="dish">
+        <img src="imagens/IMG_0240.jpg" alt="Doce 3">
+        <div class="descricao">
+            <h2>Acompanhamentos</h2>
+            <li>fricassê </li>
+            <li>Rondelle</li>
+            <li>Lasanha</li>
+            <li>Nhoque</li>
+            <li>Risotos</li>
+            <li>Canelone</li>
+            <li>Penne</li>
+            <li>Escondidinhos</li>
+
+        </div>
+    </div>
+
+    <div class="dish">
+
+        <div class="descricao">
+            <h2>Saladas e Entradas</h2>
+            <p>De acordo com a necessidade do cliente</p>
+            <li>Mix de Folhas</li>
+            <li>Ceasar</li>
+            <li>Waldorf</li>
+            <li>Caprese</li>
+            <li>Legumes Cozidos</li>
+ <img src="imagens/Bacalhau .jpg"  alt="Doce 4">
+            <h2>Para entradas </h2>
+            <li>Canapês</li>
+            <li>Parte Árabe</li> 
+             
+        </div>
+    </div>
+ 
+</section>
+
+<section id="arabe">
+
+<div  class="menu">
+  <div class="dish">
+    <img src="imagens/IMG_0876.jpg" alt="arabe 1">
+    <div class="descricao">
+      <h2>Pastas</h2>
+      <p>Acompanha Pão sirio</p>
+      <li>Coalhada Seca Síria </li>
+      <li>Babaganush</li>
+      <li>Homus</li>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/Quibe.jpg" alt="arabe 2">
+    <div class="descricao">
+      <h2>Saladas</h2>
+      <p>De acordo com a necessidade do cliente</p>
+      <li>Escabeche de Berinjela</li>
+      <li>Tabule</li>
+      <li>Fatuche</li>
+      <li>Salada Árabe</li>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/Parte árabe.jpg" alt="Doce 3">
+    <div class="descricao">
+      <h2>ATAIF</h2>
+      <li>Shishbarak</li>
+      <li>Arroz Sultana: Castanha, Figo e Tâmaras</li>
+      <li>Mjadra (Arroz com lentilha)</li>
+      <li>Charutos</li>
+      <li>Abobrinhas Recheadas</li>
+      <li>Molho de Hotelã</li>
+    </div>
+  </div>
+
+  <div class="dish">
+    <img src="imagens/Quibe no palito .jpg" alt="Doce 4">
+    <div class="descricao">
+      <h2>Carnes</h2>
+     <li>Kafta no Espeto</li>
+      <li>Quibe Assado, Quibe Cru, Quibe Frito</li>
+      <li>Pernil de Carneiro</li>
+
+    </div>
+  </div>
+</div>
+</section>
+  <nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
+      <a class="page-link" href="#coquetel" aria-label="Coquetel">
+        Coquetel
       </a>
     </li>
-    <li class="page-item"><a class="page-link" href="?pagina=catalogo&page=1">1</a>
-</li>
-    <li class="page-item"><a class="page-link" href="?pagina=catalogo&page=2">2</a>
-</li>
-    <li class="page-item"><a class="page-link" href="?pagina=catalogo&page=3">3</a>
-</li>
-<li class="page-item"><a class="page-link" href="?pagina=catalogo&page=4">4</a>
-</li>
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
+      <a class="page-link" href="#doces" aria-label="Doces">Doces</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#jantar" aria-label="Jantares">Jantares</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#arabe" aria-label="Árabe">Árabe</a>
     </li>
   </ul>
 </nav>
+
 
 <footer class="footer">
     <div class="container">
